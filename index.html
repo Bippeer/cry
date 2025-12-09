@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои дела</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+</head>
+<body>
+    <div class="main">
+        <h1 class="header">Список моих дел</h1>
+        <div class="input-area">
+            <input id="input-task" placeholder="Новая задача..." />
+            <button id="add-btn">Добавить</button>
+        </div>
+        <ul class="task-list">
+            <li class="task-item low-priority completed" onclick="this.classList.toggle ('completed')">
+                <span class="task-content">Купить сливок и кока-колу</span>
+                <div class="task-actons">
+                    <button class="task-btn" onclick="this.parentNode.parentNode.remove()">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li class="task-item low-priority completed" onclick="this.classList.toggle ('completed')">
+                <span class="task-content">Купить ёлочку</span>
+                <div class="task-actons">
+                    <button class="task-btn" onclick="this.parentNode.parentNode.remove()">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li class="task-item medium-priority" onclick="this.classList.toggle ('completed')">
+                <span class="task-content ">Убраться из дома</span>
+                <div class="task-actons">
+                    <button class="task-btn" onclick="this.parentNode.parentNode.remove()">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li class="task-item low-priority" onclick="this.classList.toggle ('completed')">
+                <span class="task-content">Поспать</span>
+                <div class="task-actons">
+                    <button class="task-btn" onclick="this.parentNode.parentNode.remove()">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+            </li>
+            <li class="task-item high-priority " onclick="this.classList.toggle ('completed')">
+                <span class="task-content">Проснуться</span>
+                <div class="task-actons">
+                    <button class="task-btn" onclick="this.parentNode.parentNode.remove()">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
